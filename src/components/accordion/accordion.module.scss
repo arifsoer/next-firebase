@@ -1,0 +1,41 @@
+.accordion {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion_item {
+  border-bottom: 1px solid #e6e1e1;
+
+  .title_item {
+    display: flex;
+    gap: 0.25rem;
+    border-bottom: 1px solid #e6e1e1;
+    background-color: #f5f0f0;
+    padding: 0.5rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      border-radius: 0.25rem;
+      padding: 0 0.5rem 0.2rem 0.5rem;
+
+      &:hover {
+        background-color: #e6e1e1;
+      }
+    }
+  }
+
+  .content_item {
+    padding: 0.5rem;
+    overflow: hidden;
+    transition: height ease 0.2s;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
